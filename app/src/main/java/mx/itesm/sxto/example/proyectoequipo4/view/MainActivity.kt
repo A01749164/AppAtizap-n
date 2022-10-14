@@ -80,8 +80,8 @@ class MainActivity : AppCompatActivity()
         // Boton que nos manda a la vista recomendacioens
         binding.btnRecomendaciones.setOnClickListener{
             println("Voy a recomendaciones")
-            val intSos = Intent(this, SOS::class.java)
-            startActivity(intSos)
+            val intRecomendadciones = Intent(this, Recomendaciones::class.java)
+            startActivity(intRecomendadciones)
         }
     }
 
