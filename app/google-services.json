@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "602545138045",
+    "project_id": "notifremota-d97bc",
+    "storage_bucket": "notifremota-d97bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602545138045:android:a5372d0ca2cdb057d34414",
+        "android_client_info": {
+          "package_name": "mx.itesm.jhb.example.loginmenulateral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMtkuhP3LlDAtKtNVO9LB5oh8WBzqxomA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602545138045:android:64aa5124c22c1657d34414",
+        "android_client_info": {
+          "package_name": "mx.itesm.jhb.example.notifremota"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMtkuhP3LlDAtKtNVO9LB5oh8WBzqxomA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602545138045:android:07db0787a027c3ebd34414",
+        "android_client_info": {
+          "package_name": "mx.itesm.sxto.example.proyectoequipo4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMtkuhP3LlDAtKtNVO9LB5oh8WBzqxomA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602545138045-q8l62tu4vn5p8rsobflbeq3hf4kkjq0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
