@@ -67,6 +67,12 @@ class LoginActivity : AppCompatActivity()
         binding.btnLogin.setOnClickListener {
             autenticar()
         }
+        // Boton que nos manda a la vista principal
+        binding.btnGratis.setOnClickListener {
+            println("Voy a menú")
+            val intMenu = Intent(this, MainActivity::class.java)
+            startActivity(intMenu)
+        }
     }
 
     private fun autenticar() {
