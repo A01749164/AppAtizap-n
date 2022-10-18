@@ -59,16 +59,10 @@ class Sismos : AppCompatActivity()
     }
 
     private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarSismos.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
         // Boton que nos manda a la vista recomendaciones
         binding.btnRecomendacionesSismos.setOnClickListener {
             println("Voy a recomendaciones")
-            val intRecomendaciones = Intent(this, Recomendaciones::class.java)
+            val intRecomendaciones = Intent(this, RecomendacionesSismos::class.java)
             startActivity(intRecomendaciones)
         }
     }

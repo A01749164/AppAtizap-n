@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity()
         // Boton que nos manda a la vista principal
         binding.btnGratis.setOnClickListener {
             println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
+            val intMenu = Intent(this, MainActivity2::class.java)
             startActivity(intMenu)
         }
     }

@@ -3,18 +3,13 @@ package mx.itesm.sxto.example.proyectoequipo4.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
 import com.firebase.ui.auth.AuthUI
 import mx.itesm.sxto.example.proyectoequipo4.databinding.ActivityMainBinding
-import mx.itesm.sxto.example.proyectoequipo4.viewmodel.InundacionesVM
 
 class MainActivity : AppCompatActivity()
 {
     // binding
     private lateinit var binding: ActivityMainBinding
-
-    // ViewModel
-    private val viewModel: InundacionesVM by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

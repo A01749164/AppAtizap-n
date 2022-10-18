@@ -59,16 +59,10 @@ class Incendios : AppCompatActivity()
     }
 
     private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarIncendios.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
         // Boton que nos manda a la vista recomendaciones
         binding.btnRecomendacionesIncendios.setOnClickListener {
             println("Voy a recomendaciones")
-            val intRecomendaciones = Intent(this, Recomendaciones::class.java)
+            val intRecomendaciones = Intent(this, RecomendacionesIncendios::class.java)
             startActivity(intRecomendaciones)
         }
     }

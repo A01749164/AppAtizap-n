@@ -15,16 +15,5 @@ class Recomendaciones : AppCompatActivity()
         binding = ActivityRecomendacionesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         println("Estoy en recomendaciones")
-
-        registrarEventos()
-    }
-
-    private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarRecomendaciones.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
     }
 }
