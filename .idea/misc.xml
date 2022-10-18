@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_clima.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_incendios.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_inundaciones.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_main2.xml" value="0.19895833333333332" />
-        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendaciones.xml" value="0.2" />
-        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionesincendios.xml" value="0.2" />
-        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionesinundaciones.xml" value="0.1641025641025641" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_noticias.xml" value="0.22" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendaciones.xml" value="0.33" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionesincendios.xml" value="0.33" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionesinundaciones.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionessismos.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_sismos.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_sos.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_trafico.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_clima.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_inundaciones.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_sismos.xml" value="0.2" />
       </map>
     </option>
   </component>

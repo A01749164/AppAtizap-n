@@ -22,30 +22,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="#DD54AB"
                 android:text="Recomendaciones"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="#099CDF"
-                android:text="Aquí puedes ver algunas recomendaciones, en caso de que te encuentres en las siguientes situaciones:"
+                android:layout_marginTop="20dp"
+                android:text="Aquí puedes ver algunas recomendaciones, en caso de que te encuentres en un incendio."
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="350dp"
+                android:layout_width="400dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="50dp"
                 android:drawingCacheQuality="auto"
                 app:srcCompat="@drawable/infoincendio" />
 

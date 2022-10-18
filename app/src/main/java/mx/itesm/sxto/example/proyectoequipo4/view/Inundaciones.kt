@@ -33,8 +33,8 @@ class Inundaciones : AppCompatActivity() {
 
     private fun configurarObservables() {
         viewModel.listainundacion.observe(this) { lista ->
-            val arrInundacion = lista.items.toTypedArray()
-            adaptadorInundacion?.arrInundaciones = arrInundacion
+            val listainundaciones = lista.toTypedArray()
+            adaptadorInundacion?.arrInundaciones = listainundaciones
             adaptadorInundacion?.notifyDataSetChanged() // Recargue todo
 
         }
@@ -46,7 +46,8 @@ class Inundaciones : AppCompatActivity() {
     }
 
     private fun configurarRV() {
-        val arrInundaciones = arrayOf(InundacionDatos("null", "null", 0.0, 0.0))
+        val arrInundaciones = arrayOf(InundacionDatos("DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos", "DescargandoDatos", "DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVInundaciones.layoutManager = layout

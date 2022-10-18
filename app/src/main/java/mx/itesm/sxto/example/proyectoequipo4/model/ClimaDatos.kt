@@ -12,7 +12,7 @@ data class ClimaDatos(
     @SerializedName("clima_actual")
     val clima_actual: String,
     @SerializedName("probabilidad_de_precipitacion")
-    val probabilidad_precipitacion: Double,
+    val probabilidad_precipitacion: Int,
     @SerializedName("humedad_relativa")
-    val humedad_relativa: Double
+    val humedad_relativa: Int
     )

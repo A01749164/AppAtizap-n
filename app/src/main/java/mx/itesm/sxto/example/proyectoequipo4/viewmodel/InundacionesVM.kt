@@ -2,8 +2,8 @@ package mx.itesm.sxto.example.proyectoequipo4.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import mx.itesm.sxto.example.proyectoequipo4.model.InfoInundaciones
 import mx.itesm.sxto.example.proyectoequipo4.apis.ServicioInundacionesAPI
+import mx.itesm.sxto.example.proyectoequipo4.model.InundacionDatos
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -16,7 +16,7 @@ class InundacionesVM : ViewModel()
     private val retrofit by lazy { // El objeto retrofit para instanciar
         //el objeto que se conecta a la red y accede a los servicios definidos
         Retrofit.Builder()
-            .baseUrl("https://environment.data.gov.uk/flood-monitoring/id/")
+            .baseUrl("https://apiinundaciones20221017191531.azurewebsites.net/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -27,13 +27,13 @@ class InundacionesVM : ViewModel()
     }
 
     // Livedata (Observables)
-    val listainundacion = MutableLiveData<InfoInundaciones>()
+    val listainundacion = MutableLiveData<List<InundacionDatos>>()
 
     fun descargarDatosInundacion() {
         println("descargarDatosInundacion")
         val call = servicioInundacionesAPI.descargarDatosInundacion() // Crea un objeto para descargar
-        call.enqueue(object : Callback<InfoInundaciones> { // DESCARGA ASÍNCRONA
-            override fun onResponse(call: Call<InfoInundaciones>, response: Response<InfoInundaciones>) {
+        call.enqueue(object : Callback<List<InundacionDatos>> { // DESCARGA ASÍNCRONA
+            override fun onResponse(call: Call<List<InundacionDatos>>, response: Response<List<InundacionDatos>>) {
                 if (response.isSuccessful) {
                     println("Lista inundaciones: ${response.body()}")
                     // Avisar a la vista (adaptador) que hay datos nuevos
@@ -43,7 +43,7 @@ class InundacionesVM : ViewModel()
                 }
             }
 
-            override fun onFailure(call: Call<InfoInundaciones>, t: Throwable) {
+            override fun onFailure(call: Call<List<InundacionDatos>>, t: Throwable) {
                 println("Error en la descarga: ${t.localizedMessage}")
             }
         })

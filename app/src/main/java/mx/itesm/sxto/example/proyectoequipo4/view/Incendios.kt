@@ -47,7 +47,8 @@ class Incendios : AppCompatActivity()
     }
 
     private fun configurarRV() {
-        val arrIncendios = arrayOf(IncendiosDatos("DescargandoDatos", "DescargandoDatos", "DescargandoDatos", "DescargandoDatos", "DescargandoDatos"))
+        val arrIncendios = arrayOf(IncendiosDatos("DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos", "DescargandoDatos", "DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVIncendios.layoutManager = layout

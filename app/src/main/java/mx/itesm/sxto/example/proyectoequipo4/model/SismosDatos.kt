@@ -12,6 +12,6 @@ data class SismosDatos(
     @SerializedName("magnitud")
     val magnitud: Double,
     @SerializedName("profundidad")
-    val profundidad: Double
+    val profundidad: Int
 
 )

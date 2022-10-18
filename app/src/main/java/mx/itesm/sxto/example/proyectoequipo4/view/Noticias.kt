@@ -29,7 +29,6 @@ class Noticias : AppCompatActivity()
         configurarRV()
         configurarObservables()
         viewModel.descargarDatosNoticias()
-        registrarEventos()
     }
 
     private fun configurarObservables() {
@@ -47,7 +46,8 @@ class Noticias : AppCompatActivity()
     }
 
     private fun configurarRV() {
-        val arrNoticias = arrayOf(NoticiasDatos("DescargandoDatos", "DescargandoDatos","DescargandoDatos", "DescargandoDatos"))
+        val arrNoticias = arrayOf(NoticiasDatos("DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos", "DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVNoticias.layoutManager = layout
@@ -56,14 +56,5 @@ class Noticias : AppCompatActivity()
 
         val divisor = DividerItemDecoration(this, layout.orientation)
         binding.RVNoticias.addItemDecoration(divisor)
-    }
-
-    private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarNoticias.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
     }
 }

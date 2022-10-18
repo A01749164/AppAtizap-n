@@ -28,7 +28,6 @@ class Trafico : AppCompatActivity() {
         configurarRV()
         configurarObservables()
         viewModel.descargarDatosTrafico()
-        registrarEventos()
     }
 
     private fun configurarObservables() {
@@ -46,7 +45,8 @@ class Trafico : AppCompatActivity() {
     }
 
     private fun configurarRV() {
-        val arrPoblacion = arrayOf(TraficoDatos("null", "null", "null","null","null"))
+        val arrPoblacion = arrayOf(TraficoDatos("DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos","DescargandoDatos","DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVTrafico.layoutManager = layout
@@ -55,14 +55,5 @@ class Trafico : AppCompatActivity() {
 
         val divisor = DividerItemDecoration(this, layout.orientation)
         binding.RVTrafico.addItemDecoration(divisor)
-    }
-
-    private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarTrafico.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
     }
 }

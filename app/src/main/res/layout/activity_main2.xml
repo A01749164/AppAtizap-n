@@ -123,7 +123,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FFFDFD"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/sos" />
+                app:srcCompat="@drawable/ayuda" />
 
             <ImageButton
                 android:id="@+id/btnRecomendaciones"

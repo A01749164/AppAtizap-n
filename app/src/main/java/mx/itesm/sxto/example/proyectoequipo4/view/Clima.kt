@@ -29,7 +29,6 @@ class Clima : AppCompatActivity()
         configurarRV()
         configurarObservables()
         viewModel.descargarDatosClima()
-        registrarEventos()
     }
 
     private fun configurarObservables() {
@@ -48,7 +47,7 @@ class Clima : AppCompatActivity()
 
     private fun configurarRV() {
         val arrClima = arrayOf(ClimaDatos("DescargandoDatos", "DescargandoDatos", 0,
-            "DescargandoDatos", 0.0, 0.0))
+            "DescargandoDatos", 0, 0))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVClima.layoutManager = layout
@@ -57,14 +56,5 @@ class Clima : AppCompatActivity()
 
         val divisor = DividerItemDecoration(this, layout.orientation)
         binding.RVClima.addItemDecoration(divisor)
-    }
-
-    private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarClima.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
     }
 }

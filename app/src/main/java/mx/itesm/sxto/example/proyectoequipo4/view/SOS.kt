@@ -15,22 +15,5 @@ class SOS : AppCompatActivity()
         binding = ActivitySosBinding.inflate(layoutInflater)
         setContentView(binding.root)
         println("Estoy en sos")
-
-        registrarEventos()
-    }
-
-    private fun registrarEventos() {
-        // Boton que nos manda a la vista principal
-        binding.btnRegresarSOS.setOnClickListener {
-            println("Voy a menú")
-            val intMenu = Intent(this, MainActivity::class.java)
-            startActivity(intMenu)
-        }
-        // Boton que nos manda a la vista recomendaciones
-        binding.btnInfo.setOnClickListener {
-            println("Voy a recomendaciones")
-            val intRecomendaciones = Intent(this, Recomendaciones::class.java)
-            startActivity(intRecomendaciones)
-        }
     }
 }

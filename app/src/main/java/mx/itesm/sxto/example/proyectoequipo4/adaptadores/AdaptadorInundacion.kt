@@ -33,13 +33,12 @@ class AdaptadorInundacion(private val contexto: Context, var arrInundaciones: Ar
         class RenglonInundaciones (var renglonInundaciones: View) : RecyclerView.ViewHolder(renglonInundaciones)
         {
             fun set(inundacion: InundacionDatos) {
-                renglonInundaciones.findViewById<TextView>(R.id.EstadoI).text = inundacion.estado
-                renglonInundaciones.findViewById<TextView>(R.id.LugarI).text = inundacion.lugar
-                renglonInundaciones.findViewById<TextView>(R.id.LatitudI).text = "${inundacion.latitud}"
-                renglonInundaciones.findViewById<TextView>(R.id.LongitudI).text = "${inundacion.longitud}"
+                renglonInundaciones.findViewById<TextView>(R.id.FechaI).text = inundacion.fecha
+                renglonInundaciones.findViewById<TextView>(R.id.HoraI).text = inundacion.hora
+                renglonInundaciones.findViewById<TextView>(R.id.CausaI).text = inundacion.causa
+                renglonInundaciones.findViewById<TextView>(R.id.SituacionI).text = inundacion.situacion_actual
+                renglonInundaciones.findViewById<TextView>(R.id.LugarI).text = inundacion.colonia
                 renglonInundaciones.findViewById<ImageView>(R.id.imgInundacion).setImageResource(R.drawable.inundacion)
             }
         }
-
-
     }
