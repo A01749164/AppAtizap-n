@@ -4,10 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.firebase.ui.auth.AuthUI
+import com.google.firebase.messaging.FirebaseMessaging
 import mx.itesm.sxto.example.proyectoequipo4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity()
 {
+    companion object {
+        private const val TAG = "MainActivity"
+        private const val NOTIFICATION_REQUEST_CODE = 1234
+    }
+
     // binding
     private lateinit var binding: ActivityMainBinding
 
@@ -18,6 +24,7 @@ class MainActivity : AppCompatActivity()
 
         registrarEventos()
         hacerSignOut()
+        FirebaseMessaging.getInstance().subscribeToTopic("news")
     }
 
     fun hacerSignOut() {
@@ -77,6 +84,12 @@ class MainActivity : AppCompatActivity()
             println("Voy a recomendaciones")
             val intRecomendadciones = Intent(this, Recomendaciones::class.java)
             startActivity(intRecomendadciones)
+        }
+        // Boton que nos manda a la vista créditos
+        binding.btnCreditos.setOnClickListener{
+            println("Voy a créditos")
+            val intCreditos = Intent(this, Creditos::class.java)
+            startActivity(intCreditos)
         }
     }
 

@@ -1,6 +1,5 @@
 package mx.itesm.sxto.example.proyectoequipo4.view
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import mx.itesm.sxto.example.proyectoequipo4.databinding.ActivityRecomendacionesBinding

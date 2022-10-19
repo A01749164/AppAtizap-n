@@ -53,6 +53,11 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.8'
     implementation 'com.firebaseui:firebase-ui-auth:8.0.1'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

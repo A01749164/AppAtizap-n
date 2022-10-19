@@ -37,7 +37,7 @@ class AdaptadorSismos(private val contexto: Context, var arrSismos: Array<Sismos
             renglonSismos.findViewById<TextView>(R.id.HoraS).text = sismos.hora
             renglonSismos.findViewById<TextView>(R.id.LugarS).text = sismos.lugar
             renglonSismos.findViewById<TextView>(R.id.MagnitudS).text = "${sismos.magnitud}"
-            renglonSismos.findViewById<TextView>(R.id.ProfundidadS).text = "${sismos.profundidad}"
+            renglonSismos.findViewById<TextView>(R.id.ProfundidadS).text = sismos.profundidad
             renglonSismos.findViewById<ImageView>(R.id.imgSismos).setImageResource(R.drawable.sismos)
         }
     }

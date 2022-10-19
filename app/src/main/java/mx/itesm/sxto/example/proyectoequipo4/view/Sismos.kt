@@ -48,7 +48,7 @@ class Sismos : AppCompatActivity()
 
     private fun configurarRV() {
         val arrSismos = arrayOf(SismosDatos("DescargandoDatos", "DescargandoDatos",
-            "DescargandoDatos", 0.0, 0))
+            "DescargandoDatos", 0.0, "DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVSismos.layoutManager = layout

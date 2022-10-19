@@ -38,7 +38,7 @@
                 android:text="¿Necesitas ayuda?"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
-                android:text="Si tienes alguna emergencia puedes comunicarte a los siguientes números:"
+                android:text="Si tienes alguna emergencia puedes comunicarte a los siguientes números escogiendo el botón que desees"
                 android:textAlignment="textStart"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -57,63 +57,66 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/btnEmergencias"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="Emergencias: 911"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/emergencias" />
 
-                <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/btnC4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="Servicios Públicos: 072"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/c4" />
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnSeguridadPT"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="C-4 Atizapán de Zaragoza: 55 5366 7193"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/seguridadpt" />
 
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/btnServiciosPublicos"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="Seguridad Pública y Tránsito: 55 1106 2163"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/serviciospublicos" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnSAPASA"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:text="SAPASA (Servicios de Agua Potable, Alcantarillado y Saneamiento de Atizapán de Zaragoza): 55 1083 6700"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/sapasa" />
             </LinearLayout>
 
             <LinearLayout
@@ -129,36 +132,8 @@
                     android:text="Cuentas Oficiales"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="34sp"
                     android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Página Web"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView23"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:text="https://atizapan.gob.mx/"
-                    android:textAlignment="textStart"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -168,27 +143,23 @@
                 android:layout_weight="2"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Twitter"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/btnPagina"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/atizapanlogo" />
 
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:text="https://atizapan.gob.mx/"
-                    android:textAlignment="textStart"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
-
+                <ImageButton
+                    android:id="@+id/btnYoutube"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/youtube" />
             </LinearLayout>
 
             <LinearLayout
@@ -197,26 +168,23 @@
                 android:layout_weight="2"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Facebook"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/twitter" />
 
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:text="https://www.facebook.com/GobAtizapan"
-                    android:textAlignment="textStart"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
+                <ImageButton
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/facebook" />
 
             </LinearLayout>
 

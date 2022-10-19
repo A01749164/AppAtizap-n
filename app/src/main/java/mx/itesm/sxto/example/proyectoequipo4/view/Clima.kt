@@ -1,15 +1,18 @@
 package mx.itesm.sxto.example.proyectoequipo4.view
 
-import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import mx.itesm.sxto.example.proyectoequipo4.R
 import mx.itesm.sxto.example.proyectoequipo4.adaptadores.AdaptadorClima
 import mx.itesm.sxto.example.proyectoequipo4.databinding.ActivityClimaBinding
 import mx.itesm.sxto.example.proyectoequipo4.model.ClimaDatos
 import mx.itesm.sxto.example.proyectoequipo4.viewmodel.ClimaVM
+
 
 class Clima : AppCompatActivity()
 {
@@ -46,8 +49,9 @@ class Clima : AppCompatActivity()
     }
 
     private fun configurarRV() {
-        val arrClima = arrayOf(ClimaDatos("DescargandoDatos", "DescargandoDatos", 0,
-            "DescargandoDatos", 0, 0))
+        val arrClima = arrayOf(ClimaDatos("DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos", "DescargandoDatos",
+            "DescargandoDatos", "DescargandoDatos"))
         val layout = LinearLayoutManager(this)
         layout.orientation = LinearLayoutManager.VERTICAL
         binding.RVClima.layoutManager = layout

@@ -8,11 +8,11 @@ data class ClimaDatos(
     @SerializedName("hora")
     val hora: String,
     @SerializedName("temperatura")
-    val temperatura: Int,
+    val temperatura: String,
     @SerializedName("clima_actual")
     val clima_actual: String,
     @SerializedName("probabilidad_de_precipitacion")
-    val probabilidad_precipitacion: Int,
+    val probabilidad_precipitacion: String,
     @SerializedName("humedad_relativa")
-    val humedad_relativa: Int
+    val humedad_relativa: String
     )

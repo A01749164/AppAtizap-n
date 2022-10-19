@@ -34,10 +34,10 @@ class AdaptadorClima(private val contexto: Context, var arrClima: Array<ClimaDat
         fun set(clima: ClimaDatos) {
             renglonClima.findViewById<TextView>(R.id.FechaC).text = clima.fecha
             renglonClima.findViewById<TextView>(R.id.HoraC).text = clima.hora
-            renglonClima.findViewById<TextView>(R.id.TemperaturaC).text = "${clima.temperatura}"
+            renglonClima.findViewById<TextView>(R.id.TemperaturaC).text = clima.temperatura
             renglonClima.findViewById<TextView>(R.id.ClimaActualC).text = clima.clima_actual
-            renglonClima.findViewById<TextView>(R.id.PrecipitacionC).text = "${clima.probabilidad_precipitacion}"
-            renglonClima.findViewById<TextView>(R.id.HumedadC).text = "${clima.humedad_relativa}"
+            renglonClima.findViewById<TextView>(R.id.PrecipitacionC).text = clima.probabilidad_precipitacion
+            renglonClima.findViewById<TextView>(R.id.HumedadC).text = clima.humedad_relativa
             renglonClima.findViewById<ImageView>(R.id.imgClima).setImageResource(R.drawable.clima)
         }
     }

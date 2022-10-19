@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_clima.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_creditos.xml" value="0.25" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_incendios.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_inundaciones.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_login.xml" value="0.25" />
@@ -16,9 +17,10 @@
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionesinundaciones.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_recomendacionessismos.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_sismos.xml" value="0.2" />
-        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_sos.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_sos.xml" value="0.33" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/activity_trafico.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_clima.xml" value="0.2" />
+        <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_incendios.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_inundaciones.xml" value="0.2" />
         <entry key="..\:/Users/jeova/Desktop/Entrega_Final/AppAtizap-n/app/src/main/res/layout/renglon_sismos.xml" value="0.2" />
       </map>
