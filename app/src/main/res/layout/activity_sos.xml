@@ -38,7 +38,7 @@
                 android:text="¿Necesitas ayuda?"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="34sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -49,9 +49,9 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Si tienes alguna emergencia puedes comunicarte a los siguientes números escogiendo el botón que desees"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,15 +86,6 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/btnSeguridadPT"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="#FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/seguridadpt" />
-
-                <ImageButton
                     android:id="@+id/btnServiciosPublicos"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
@@ -102,12 +93,22 @@
                     android:backgroundTint="#FFFFFF"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/serviciospublicos" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnSeguridadPT"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/seguridadpt" />
 
                 <ImageButton
                     android:id="@+id/btnSAPASA"
